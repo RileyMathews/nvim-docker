@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  dev:
+    build: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/code
+      - ~/.config/nvim:/root/.config/nvim
+      - ~/.local/nvim:/root/.local/nvim
